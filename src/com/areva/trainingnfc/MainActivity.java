@@ -1,7 +1,7 @@
 package com.areva.trainingnfc;
 /*
  * Vår huvudaktivitet, hanterar två aktiviteter, antingen loggar man in eller skapar en ny inloggning
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import android.app.Activity;
