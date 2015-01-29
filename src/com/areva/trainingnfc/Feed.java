@@ -1,7 +1,7 @@
 package com.areva.trainingnfc;
 /*
  * Klass som visar upp all information som lagrats om taggarna i vår databas.
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import java.util.ArrayList;
