@@ -52,7 +52,7 @@ public class Scanning extends Activity {
 		db = new MyDatabase(this);
 		//Om våran enhet inte stödjer NFC
 		if (mNfcAdapter == null) {
-			// Stop here, we definitely need NFC
+			// Stoppa har om enheten inte stödjer NFC
 			Toast.makeText(this, "Den här enheten stödjer tyvärr inte NFC.", Toast.LENGTH_LONG).show();
 			finish();
 			return;
