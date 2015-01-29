@@ -1,7 +1,7 @@
 package com.areva.trainingnfc;
 /*
  * Klass som skapar och hanterar allt som har med vår databas att göra
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import java.util.ArrayList;
