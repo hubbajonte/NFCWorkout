@@ -1,7 +1,7 @@
 package com.areva.trainingnfc;
 /*
  * Klass som redigerar profilen, dvs uppdaterar vår databas
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import android.app.Activity;
