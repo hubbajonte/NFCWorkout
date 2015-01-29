@@ -1,7 +1,7 @@
 package com.areva.trainingnfc;
 /*
  * Denna klassen är tänkt att hålla kod som ska underlätta visandet av en enskild tag
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import android.app.Activity;
