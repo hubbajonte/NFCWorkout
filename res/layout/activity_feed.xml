@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#e5e5e5">
+    <!-- 
+    Det här är vår XML-Fil för att hantera vårt flöde av aktiviteter (lästa taggar).
+    Nedan följer de vyer som vi använder oss utav och dess attribut.
+    I detta fall använder vi oss utav en ListView för att skapa vår strukturerade layout
+     -->
+    <ListView
+        android:id="@+id/tagList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="20dp" >
+
+    </ListView>
+
+</LinearLayout>

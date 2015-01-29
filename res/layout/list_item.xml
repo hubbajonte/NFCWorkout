@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="?android:attr/listPreferredItemHeight">
+    <!-- 
+    Det här är vår XML-Fil för att hantera ett enskilt objekt i vårt flöde.
+    Nedan följer de vyer som vi använder oss utav och dess attribut.
+    I detta fall använder vi oss utav en Linear för att skapa vår strukturerade layout
+     -->
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+   		android:layout_marginLeft="6dp"
+   		android:layout_marginRight="6dp"
+   		android:layout_marginTop="4dp"
+   		android:layout_marginBottom="4dp"
+   		android:background="@drawable/background_card">     <!-- Vår bakgrund för att få upp varje objekt i ett kort -->
+        <TextView
+        android:id="@+id/info"
+        android:layout_gravity="left|center_vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

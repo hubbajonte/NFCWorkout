@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.areva.trainingnfc.Scanning"
+    tools:ignore="MergeRootFrame" >
+    <!-- 
+    Det här är vår XML-Fil för att hantera skannigen.
+    Nedan följer de vyer som vi använder oss utav och dess attribut.
+    I detta fall använder vi oss utav en Relative för att skapa vår strukturerade layout
+     -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtScanned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/scan"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtNFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="51dp"
+            android:text="@string/noData"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+	<!-- Vår bild där vi visar upp information om den aktuella skanningen -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/scanningbutton" />
+
+    </RelativeLayout>
+
+</FrameLayout>

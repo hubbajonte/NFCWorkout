@@ -1,0 +1,219 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.areva.trainingnfc.CreateLogin"
+    tools:ignore="MergeRootFrame" >
+    
+    <!-- 
+    Det här är vår XML-Fil för att hantera registeringen.
+    Nedan följer de vyer som vi använder oss utav och dess attribut.
+    I detta fall använder vi oss utav en TableLayout för att skapa vår strukturerade layout
+     -->
+    
+  <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ddd" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="50dp" >
+
+            <TextView
+                android:id="@+id/txtCreateName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+
+        </TableRow>
+
+			<View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dip"
+			    android:background="#ddd" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/txtCreateWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/weight"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                 android:inputType="numberSigned" >
+            </EditText>
+
+        </TableRow>
+			<View
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#ddd" />
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/txtCreateLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/length"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+
+            <EditText
+                android:id="@+id/editLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                 android:inputType="numberSigned">
+
+            
+            </EditText>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ddd" />
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/txtCreateEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" >
+
+            
+            </EditText>
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ddd" />
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/txtCreateGym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/homegym"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editGym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10">
+
+            
+            </EditText>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ddd" />
+                <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/txtCreatePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/password"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" >
+
+            
+            </EditText>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ddd" />
+
+        <Button
+            android:id="@+id/btnCreateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createProfile"
+            android:background="#e5e5e5"
+            android:text="@string/createProfile" />
+
+    </TableLayout>
+    </FrameLayout>

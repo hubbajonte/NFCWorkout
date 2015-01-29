@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrainingNFC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="log_in">Logga in</string>
+    <string name="username">Användarnamn:</string>
+    <string name="password">Lösenord:</string>
+    <string name="title_activity_profile">Profil</string>
+    <string name="title_activity_scanning">Skanner</string>
+    <string name="scan">Håll mobilen mot taggen</string>
+    <string name="name">Namn:</string>
+    <string name="weight">Vikt:</string>
+    <string name="length">Längd:</string>
+    <string name="email">Epost:</string>
+    <string name="homegym">Gym:</string>
+    <string name="noData">-</string>
+    <string name="title_activity_edit_profile">Redigera Profil</string>
+    <string name="action_editProfile">Redigera Profil</string>
+    <string name="main_title">Logga in</string>
+    <string name="title_activity_create_login">Registrering</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_feed">Flöde</string>
+    <string name="createLogin">Registrering</string>
+    <string name="createProfile">Skapa</string>
+    <string name="title_activity_scanned_tag">Skannad information</string>
+    <string name="feed">Flöde</string>
+
+    <color name="second_grey">#f9999999</color>
+    <color name="card_white">#ffffffff</color>
+    <color name="card_shadow">#8c666666</color>
+
+    <string name="tagInfo"></string>
+    <string name="toScan">Skanna</string>
+    <string name="updateProfile">Uppdatera</string>
+    <string name="title_activity_about">Om</string>
+    <string name="action_profile">Profil</string>
+    <string name="action_about">Om</string>
+    <string name="about">Skaparen utav denna applikation heter Jonathan Arevalo. Applikationen är ett resultat utav kursen SAP200 som ges vid Högskolan Väst.</string>
+
+</resources>

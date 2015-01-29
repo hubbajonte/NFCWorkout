@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="-50dp"
+    tools:context="com.areva.trainingnfc.MainActivity"
+    tools:ignore="MergeRootFrame" >
+    <!-- 
+    Det här är vår XML-Fil för att hantera vår MainAktivitet, vi har två bilder med tillhörande text som hanterar klick som sedan skickar oss vidare
+    till respektive aktivitet.
+    Nedan följer de vyer som vi använder oss utav och dess attribut.
+    I detta fall använder vi oss utav en Relative för att skapa vår strukturerade layout
+     -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left|top"
+        android:background="#c5e26d"
+        android:clickable="true"
+        android:onClick="LoginPage"
+        android:src="@drawable/loginbtn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#d6adeb"
+        android:clickable="true"
+        android:onClick="CreateLogin"
+        android:src="@drawable/createbtn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:text="@string/createLogin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:text="@string/log_in"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF"
+        android:textSize="40sp" />
+
+</RelativeLayout>
