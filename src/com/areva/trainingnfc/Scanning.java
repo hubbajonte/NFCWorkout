@@ -3,7 +3,7 @@ package com.areva.trainingnfc;
  * Klass som hanterar skanningen utav NFC-taggarna/datan, specifikt en NDEF tag
  * Delar utav denna klass är hämtad från Googles tutorials
  * 
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import com.areva.trainingnfc.Models.Taggie;
