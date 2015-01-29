@@ -1,7 +1,7 @@
 package com.areva.trainingnfc;
 /*
  * Klass som hanterar inloggningen, hämtar data från databasen
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import android.app.Activity;
