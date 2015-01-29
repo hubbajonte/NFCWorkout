@@ -1,7 +1,7 @@
 package com.areva.trainingnfc;
 /*
  * Klass som skapar en inloggning och lagrar denna i vår databas
- * Jonathan Arevalo Garay 9205194856
+ * Jonathan Arevalo Garay
  * 
  * */
 import com.areva.trainingnfc.Models.User;
