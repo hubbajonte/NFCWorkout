@@ -99,18 +99,12 @@ public class Scanning extends Activity {
 	protected void onResume() {
 		super.onResume();
 		
-		/*
-		 * It's important, that the activity is in the foreground (resumed). Otherwise
-		 * an IllegalStateException is thrown. 
-		 */
 		setupForegroundDispatch(this, mNfcAdapter);
 	}
 	
 	@Override
 	protected void onPause() {
-		/*
-		 * Call this before onPause, otherwise an IllegalArgumentException is thrown as well.
-		 */
+
 		stopForegroundDispatch(this, mNfcAdapter);
 		
 		super.onPause();
@@ -118,13 +112,7 @@ public class Scanning extends Activity {
 	
 	@Override
 	protected void onNewIntent(Intent intent) {
-		/*
-		 * This method gets called, when a new Intent gets associated with the current activity instance.
-		 * Instead of creating a new activity, onNewIntent will be called. For more information have a look
-		 * at the documentation.
-		 * 
-		 * In our case this method gets called, when the user attaches a Tag to the device.
-		 */
+
 		handleIntent(intent);
 	}
 	
@@ -144,7 +132,6 @@ public class Scanning extends Activity {
 			}
 		} else if (NfcAdapter.ACTION_TECH_DISCOVERED.equals(action)) {
 			
-			// In case we would still use the Tech Discovered Intent
 			Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 			String[] techList = tag.getTechList();
 			String searchedTech = Ndef.class.getName();
@@ -158,10 +145,6 @@ public class Scanning extends Activity {
 		}
 	}
 	
-	/**
-	 * @param activity The corresponding {@link Activity} requesting the foreground dispatch.
-	 * @param adapter The {@link NfcAdapter} used for the foreground dispatch.
-	 */
 	public static void setupForegroundDispatch(final Activity activity, NfcAdapter adapter) {
 		final Intent intent = new Intent(activity.getApplicationContext(), activity.getClass());
 		intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -171,7 +154,7 @@ public class Scanning extends Activity {
 		IntentFilter[] filters = new IntentFilter[1];
 		String[][] techList = new String[][]{};
 
-		// Notice that this is the same filter as in our manifest.
+		// Samma filter som i manifestet
 		filters[0] = new IntentFilter();
 		filters[0].addAction(NfcAdapter.ACTION_NDEF_DISCOVERED);
 		filters[0].addCategory(Intent.CATEGORY_DEFAULT);
@@ -184,10 +167,6 @@ public class Scanning extends Activity {
 		adapter.enableForegroundDispatch(activity, pendingIntent, filters, techList);
 	}
 
-	/**
-	 * @param activity The corresponding {@link BaseActivity} requesting to stop the foreground dispatch.
-	 * @param adapter The {@link NfcAdapter} used for the foreground dispatch.
-	 */
 	public static void stopForegroundDispatch(final Activity activity, NfcAdapter adapter) {
 		adapter.disableForegroundDispatch(activity);
 	}
